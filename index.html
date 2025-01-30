@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Kooz's Focus Timer</h1>
+        <div class="timer-container">
+            <div class="timer">
+                <span id="minutes">25</span><span class="colon">:</span><span id="seconds">00</span>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start" class="primary-btn">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="mode-switches">
+            <button id="pomodoro25" class="active">25</button>
+            <button id="pomodoro50">50</button>
+            <button id="short-break">Break</button>
+            <button id="long-break">Long Break</button>
+        </div>
+    </div>
+    <audio id="timer-sound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
+    <script src="script.js"></script>
+</body>
+</html> 
